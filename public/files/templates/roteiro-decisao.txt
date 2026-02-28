@@ -1,0 +1,8 @@
+Silveira Consultora
+Roteiro de Decisao com IA
+
+1. Processo analisado
+2. Ganho esperado
+3. Risco operacional
+4. Dono da decisao
+5. Teste inicial

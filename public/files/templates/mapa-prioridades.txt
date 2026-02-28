@@ -1,0 +1,8 @@
+Silveira Consultora
+Mapa de Prioridades Operativas
+
+1. Prioridad principal
+2. Responsable
+3. Dependencias
+4. Riesgo principal
+5. Proximo paso
