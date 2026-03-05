@@ -35,6 +35,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+_recovery_backups/
+supabase/.temp/
 
 # typescript
 *.tsbuildinfo
