@@ -100,7 +100,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     siteSubtitle: "Procesos + IA",
     nav: {
       about: "Nosotros",
-      methodology: "Metodologia",
+      methodology: "Metodo",
       insights: "Insights",
       cases: "Casos",
       templates: "Templates",
@@ -237,7 +237,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     siteSubtitle: "Processes + AI",
     nav: {
       about: "About",
-      methodology: "Methodology",
+      methodology: "Method",
       insights: "Insights",
       cases: "Cases",
       templates: "Templates",
@@ -374,7 +374,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     siteSubtitle: "Processos + IA",
     nav: {
       about: "Sobre",
-      methodology: "Metodologia",
+      methodology: "Metodo",
       insights: "Insights",
       cases: "Casos",
       templates: "Templates",

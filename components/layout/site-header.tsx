@@ -9,12 +9,12 @@ export function SiteHeader({ locale }: { locale: Locale }) {
 
   const navItems = [
     { key: "about", href: `/${locale}/about` },
-    { key: "methodology", href: `/${locale}/methodology` },
+  ] as const;
+
+  const knowledgeItems = [
     { key: "insights", href: `/${locale}/insights` },
     { key: "cases", href: `/${locale}/cases` },
     { key: "templates", href: `/${locale}/templates` },
-    { key: "contact", href: `/${locale}/contact` },
-    { key: "media", href: `/${locale}/media` },
   ] as const;
 
   return (
@@ -34,6 +34,35 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               {dict.nav[item.key]}
             </Link>
           ))}
+          <Link
+            href={`/${locale}/methodology`}
+            className="transition duration-300 hover:text-brand"
+          >
+            {dict.nav.methodology}
+          </Link>
+          <div className="flex flex-col items-start border-l border-line pl-5 text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+            {knowledgeItems.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                className="py-0.5 transition duration-300 hover:text-brand"
+              >
+                {dict.nav[item.key]}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href={`/${locale}/contact`}
+            className="transition duration-300 hover:text-brand"
+          >
+            {dict.nav.contact}
+          </Link>
+          <Link
+            href={`/${locale}/media`}
+            className="transition duration-300 hover:text-brand"
+          >
+            {dict.nav.media}
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
           <LocaleSwitcher />
