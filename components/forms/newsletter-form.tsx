@@ -56,6 +56,8 @@ export function NewsletterForm({
   return (
     <form className="space-y-3" onSubmit={handleSubmit}>
       <input
+        maxLength={120}
+        autoComplete="name"
         value={name}
         onChange={(event) => setName(event.target.value)}
         placeholder={labels.name}
@@ -64,6 +66,7 @@ export function NewsletterForm({
       <input
         required
         type="email"
+        autoComplete="email"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
         placeholder={labels.email}

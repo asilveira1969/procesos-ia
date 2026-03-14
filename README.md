@@ -30,12 +30,14 @@ Copy `.env.example` and fill:
 - `SUPABASE_SERVICE_ROLE_KEY`
 
 Tracking providers remain inactive if their IDs are empty.
+`NEXT_PUBLIC_SITE_URL` should be the canonical production origin, including protocol.
 
 ## Supabase
 
 SQL migrations are stored in `supabase/migrations/`.
 
 Apply them manually in your Supabase project SQL editor. The app uses server-side API routes for inserts, so the service role key must stay server-only.
+If Supabase credentials are missing, contact/newsletter/template endpoints return `503` instead of failing the app build.
 
 ## Content workflow
 
@@ -53,6 +55,11 @@ Apply them manually in your Supabase project SQL editor. The app uses server-sid
 
 - Replace the founder placeholder in `public/images/founder/`.
 - Replace OG placeholders in `public/images/og/`.
+
+## Content review queue
+
+- Review `content/insights/*/sample-post.md` and `content/cases/*/sample-case.md` before production.
+- Confirm whether placeholder founder imagery should remain in non-production environments only.
 
 ## OpenClaw boundary
 

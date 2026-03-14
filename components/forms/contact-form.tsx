@@ -55,6 +55,8 @@ export function ContactForm({
     <form onSubmit={handleSubmit} className="card-surface space-y-4 rounded-[2rem] p-8">
       <input
         required
+        maxLength={120}
+        autoComplete="name"
         value={form.name}
         onChange={(event) => setForm({ ...form, name: event.target.value })}
         placeholder={labels.name}
@@ -63,6 +65,7 @@ export function ContactForm({
       <input
         required
         type="email"
+        autoComplete="email"
         value={form.email}
         onChange={(event) => setForm({ ...form, email: event.target.value })}
         placeholder={labels.email}
@@ -70,6 +73,8 @@ export function ContactForm({
       />
       <textarea
         required
+        minLength={10}
+        maxLength={3000}
         value={form.message}
         onChange={(event) => setForm({ ...form, message: event.target.value })}
         placeholder={labels.message}

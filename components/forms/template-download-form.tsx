@@ -67,6 +67,7 @@ export function TemplateDownloadForm({
       <input
         required
         type="email"
+        autoComplete="email"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
         placeholder={labels.email}
